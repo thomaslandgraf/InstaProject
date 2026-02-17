@@ -10,7 +10,9 @@ a {
 }
 
 body {
-  background-color: #fafafa;
+  --background: #fafafa;
+
+  background-color: var(--background);
   height: 100%;
   width: 100%;
   margin: 0;
@@ -77,13 +79,13 @@ input[type="text"] {
   margin-top: 10px;
   padding: 10px;
   font-size: 13px;
-  width: 320px;
+  width: 100%;
   color: #000000;
 }
 
 input[type="password"]::placeholder,
 input[type="text"]::placeholder {
-  color: rgb(165, 164, 164);
+  color: rgb(115, 115, 115);
 }
 
 input[type="password"]:focus,
@@ -93,7 +95,7 @@ input[type="text"]:focus {
 }
 
 input[type="submit"] {
-  width: 320px;
+  width: 100%;
   padding: 8px;
   margin-top: 10px;
   height: 30px;
@@ -134,4 +136,116 @@ input[type="submit"] {
 .app-buttons img {
   height: 40px;
   padding: 0 2px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  margin-top: -50px;
+}
+
+footer a {
+  color: rgb(115, 115, 115);
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(115, 115, 115);
+  text-transform: uppercase;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+/*REGISTER PAGE*/
+
+#container-signup {
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  margin: 10px 70px;
+}
+
+.message span {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(115, 115, 115);
+}
+
+.btn-facebook {
+  width: 100%;
+  margin: 10px 0;
+  height: 35px;
+  background-color: #3c96ed;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.div-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(115, 115, 115);
+  width: 43%;
+}
+
+.div-tag {
+  font-weight: bold;
+  margin: 0 2%;
+  color: #8e8e8e;
+  user-select: none;
+}
+
+/*END REGISTER PAGE*/
+
+@media (max-width: 850px) {
+  .left {
+    display: none;
+  }
+
+  #container {
+    width: 60%;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+
+  @media (max-width: 490px) {
+    #container {
+      width: 90%;
+    }
+
+    #container-signup {
+      width: 90%;
+    }
+
+    input[type="password"],
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+    }
+
+    .message {
+      margin: 10px 25px;
+    }
+  }
 }

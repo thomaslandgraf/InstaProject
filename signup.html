@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Insta</title>
+    <title>Sign up</title>
   </head>
   <body>
     <!--AREA WRAPPER-->
     <div id="wrapper">
       <!--AREA CONTAINER-->
-      <div id="container">
-        <!--COLUMN LEFT-->
-        <div class="column left">
-          <div class="main"></div>
-        </div>
-        <!--END COLUMN LEFT-->
+      <div id="container-signup">
         <!--COLUMN RIGHT-->
-        <div class="column right">
+        <div class="column">
           <div class="login-panel">
             <div class="logo">
               <img
@@ -26,19 +21,32 @@
                 alt="Logo Insta"
               />
             </div>
+            <div class="message">
+              <span>Sign up to see photos and videos from your friends.</span>
+            </div>
+
+            <button class="btn-facebook">Signup with Facebook</button>
+
+            <div class="div-container">
+              <div class="line"></div>
+              <div class="div-tag">or</div>
+              <div class="line"></div>
+            </div>
             <form>
               <input
-                placeholder="Mobile number, username or email"
+                placeholder="Mobile number or email"
                 type="text"
                 name="username"
               />
+              <input placeholder="Full name" type="text" name="name" />
+              <input placeholder="User name" type="text" name="username" />
               <input placeholder="Password" type="password" name="password" />
               <input type="submit" value="Log in" />
             </form>
           </div>
 
           <div class="infobox">
-            <p><a href="signup.html">Register</a></p>
+            <p><a href="index.html">I already have an account</a></p>
           </div>
 
           <div class="get-app-panel">
